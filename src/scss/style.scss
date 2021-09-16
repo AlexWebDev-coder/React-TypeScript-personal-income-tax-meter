@@ -1,0 +1,132 @@
+/** @format */
+
+$grayColor: rgb(179, 179, 179);
+$borColor: rgb(177, 175, 175);
+$blackColor: black;
+$txtColor: rgba(148, 146, 146, 0.637);
+$whiCo: rgb(255, 255, 255);
+$text: "МРОТ - минимальный размер оплаты труда. Разный для разных регионов";
+$backColor: #5c6bc0;
+$textContainerPosition: polygon(
+  0 11%,
+  0 100%,
+  52% 100%,
+  100% 100%,
+  100% 27%,
+  7% 27%
+);
+
+.classHover:hover:after {
+  color: $whiCo;
+  width: 210px;
+  height: 100px;
+  display: flex;
+  position: fixed;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 32px;
+  margin-left: 10px;
+  align-items: center;
+  justify-content: center;
+  content: $text;
+  background-color: $backColor;
+  clip-path: $textContainerPosition;
+  z-index: 100;
+}
+
+.classHoverFreeze:after {
+  color: $whiCo;
+  width: 210px;
+  height: 100px;
+  position: fixed;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 32px;
+  margin-left: 10px;
+  margin-bottom: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: $text;
+  background-color: $backColor;
+  clip-path: $textContainerPosition;
+  z-index: 100;
+  user-select: contain;
+}
+
+button {
+  background-color: $whiCo;
+}
+
+.textColor {
+  color: $txtColor;
+}
+.container {
+  margin-top: 20px;
+  margin-left: 22px;
+}
+
+.checkboxColor {
+  color: $blackColor;
+}
+
+.btnInfoIX {
+  display: flex;
+}
+
+.radioMargin {
+  margin-top: -10px;
+}
+
+.colorFalse {
+  color: $blackColor;
+}
+.colorTrue {
+  color: $grayColor;
+}
+.positionInput {
+  margin-left: 30px;
+}
+.textField {
+  border: 1px solid $borColor;
+  border-radius: 10px;
+  width: 18vh;
+  padding-left: 10px;
+  font-size: 18;
+  height: 20px;
+  margin-top: 15px;
+  outline: 0;
+  font-weight: bold;
+}
+
+.boxContainer {
+  margin-top: 30px;
+  width: 360px;
+  height: 150px;
+  background-color: $whiCo;
+  display: flex;
+  padding-right: 30px;
+  flex-direction: column;
+  align-items: left;
+  padding-left: 30px;
+  justify-content: center;
+}
+.positionBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-left: 32px;
+}
+
+.titleBtn {
+  color: $borColor;
+  border: 0.5px solid $borColor;
+  border-radius: 15px;
+  width: 19px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  outline: 0;
+  margin-top: -15px;
+  margin-left: -9px;
+}

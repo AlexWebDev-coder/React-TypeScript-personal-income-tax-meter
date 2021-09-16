@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/** @format */
+/** @format */
+.classHover:hover:after {
+  color: white;
+  width: 210px;
+  height: 100px;
+  display: flex;
+  position: fixed;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 32px;
+  margin-left: 10px;
+  align-items: center;
+  justify-content: center;
+  content: "МРОТ - минимальный размер оплаты труда. Разный для разных регионов";
+  background-color: #5c6bc0;
+  clip-path: polygon(0 11%, 0 100%, 52% 100%, 100% 100%, 100% 27%, 7% 27%);
+  z-index: 100; }
+
+.classHoverFreeze:after {
+  color: white;
+  width: 210px;
+  height: 100px;
+  position: fixed;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 32px;
+  margin-left: 10px;
+  margin-bottom: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: "МРОТ - минимальный размер оплаты труда. Разный для разных регионов";
+  background-color: #5c6bc0;
+  clip-path: polygon(0 11%, 0 100%, 52% 100%, 100% 100%, 100% 27%, 7% 27%);
+  z-index: 100;
+  user-select: contain; }
+
+button {
+  background-color: white; }
+
+/*# sourceMappingURL=style.css.map */
